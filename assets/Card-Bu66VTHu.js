@@ -1,1 +1,0 @@
-import{i as e}from"./index-_Lu4ahi0.js";var t=e();function n({children:e,className:n=``,as:r=`div`}){return(0,t.jsx)(r,{className:`card ${n}`,children:e})}export{n as t};
