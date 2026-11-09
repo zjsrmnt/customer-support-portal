@@ -13,7 +13,7 @@ export default function DownloadsPage() {
       <div className="max-w-3xl">
         <h1 className="heading-1">Downloads</h1>
         <p className="mt-2 text-ink-600">
-          Download the latest version of {siteConfig.productName}.
+          Download the latest version of CookieCrumbs for your Chromium-based browser.
         </p>
       </div>
 
@@ -55,8 +55,8 @@ export default function DownloadsPage() {
                   <span className="font-medium">Download not available yet</span>
                 </div>
                 <p className="mt-2 text-sm text-amber-700">
-                  The installer for version {siteConfig.version} is being prepared. Please check back soon
-                  or contact support for assistance.
+                  The CookieCrumbs extension package is being prepared. Please check back soon
+                  or follow the manual installation steps in the Installation Guide.
                 </p>
                 <button type="button" className="btn-secondary mt-3" disabled>
                   <Icon name="Download" className="h-4 w-4" />
@@ -78,15 +78,15 @@ export default function DownloadsPage() {
             ))}
             <li className="flex items-start gap-2">
               <Icon name="CheckCircle2" className="mt-0.5 h-4 w-4 text-brand-600" />
-              4 GB RAM minimum (8 GB recommended)
+              Manifest V3 compatible
             </li>
             <li className="flex items-start gap-2">
               <Icon name="CheckCircle2" className="mt-0.5 h-4 w-4 text-brand-600" />
-              500 MB free disk space
+              No external server required — runs fully in-browser
             </li>
           </ul>
           <p className="mt-4 text-xs text-ink-500 italic">
-            PLACEHOLDER — replace requirements with real values.
+            PLACEHOLDER — confirm final requirements before submission.
           </p>
         </Card>
       </div>

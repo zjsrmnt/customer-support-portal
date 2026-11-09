@@ -1,5 +1,4 @@
 import { installationSteps, troubleshooting } from "../data/installationSteps.js";
-import { siteConfig } from "../data/siteConfig.js";
 import { PageShell } from "../components/layout/PageShell.jsx";
 import { Card } from "../components/common/Card.jsx";
 import { Icon } from "../components/common/Icon.jsx";
@@ -10,7 +9,7 @@ export default function InstallationGuidePage() {
       <div className="max-w-3xl">
         <h1 className="heading-1">Installation Guide</h1>
         <p className="mt-2 text-ink-600">
-          Follow these steps to install {siteConfig.productName} on Windows.
+          Follow these steps to install CookieCrumbs in a Chromium-based browser.
         </p>
       </div>
 

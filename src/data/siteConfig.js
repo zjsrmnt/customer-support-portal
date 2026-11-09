@@ -1,19 +1,25 @@
-// PLACEHOLDER CONTENT — replace with real product information before launch.
-// See PLACEHOLDERS.md at project root for the full tracking list.
+// Product configuration for CookieCrumbs.
+// Values derived from the capstone document "IT 57 - CookieCrumbs - FINAL".
+// Items still marked PLACEHOLDER need real values before final submission.
 
 export const siteConfig = {
-  productName: "Your Software",
-  tagline: "A short, one-line description of what your software does.",
+  productName: "CookieCrumbs",
+  tagline:
+    "A cybersecurity browser extension for cookie risk analysis, real-time threat alerts, risk-based cookie protection, and website privacy scoring.",
   description:
-    "Replace this paragraph with a clear explanation of your software, who it is for, and the problem it solves.",
+    "CookieCrumbs analyzes and classifies website cookies in real time, estimates privacy risk, and gives you a 0-100 privacy score plus real-time threat alerts — so you can make informed decisions about a site's data handling before you consent.",
   version: "1.0.0",
-  releaseDate: "2026-01-01",
-  // Set to a real URL (or a path under /public/downloads/) when the installer is ready.
-  // null renders a clearly-marked "coming soon" download state.
+  releaseDate: "2026-05-01",
+  // The extension is distributed as an unpacked Chromium extension for the capstone demo.
+  // Set to a real download URL (e.g. a zipped extension build) when available.
   downloadUrl: null,
-  installerFileName: "YourSoftware-Setup-1.0.0.exe",
+  installerFileName: "CookieCrumbs-extension.zip",
   installerSize: "—",
-  platforms: ["Windows 10 / 11 (64-bit)"],
-  supportEmail: "support@example.com",
-  copyright: "© 2026 Your Company. All rights reserved.",
+  platforms: [
+    "Google Chrome (desktop)",
+    "Microsoft Edge (desktop)",
+    "Brave (desktop)",
+  ],
+  supportEmail: "support@example.com", // PLACEHOLDER
+  copyright: "© 2026 CookieCrumbs Capstone Team. All rights reserved.",
 };

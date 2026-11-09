@@ -1,38 +1,22 @@
 # Placeholder Content Tracking
 
-Everything below must be replaced with real product information before launch.
+Product: CookieCrumbs (capstone browser extension). Content derived from
+"IT 57 - CookieCrumbs - FINAL" (May 2026). Items below still need real values.
 
-## Product identity (src/data/siteConfig.js)
-- productName: "Your Software" → real product name
-- tagline → real one-line description
-- description → real product description
-- version: "1.0.0" → current version
-- releaseDate: "2026-01-01" → actual release date
-- downloadUrl: null → real installer URL or /public/downloads/... path
-- installerFileName → real installer file name
-- installerSize: "—" → real file size
-- platforms → real supported OS list
-- supportEmail: "support@example.com" → real support email
-- copyright → real company/year
+## Still placeholders
+- src/data/siteConfig.js → supportEmail: "support@example.com" (replace with team email)
+- src/data/siteConfig.js → downloadUrl: null (set when a zipped extension build is available)
+- src/data/siteConfig.js → installerSize: "—" (set when package is built)
+- src/pages/DownloadsPage.jsx → system requirements note (confirm final requirements)
+- src/pages/SupportPage.jsx → response-time expectations (adjust to real SLA)
+- src/pages/UserGuidePage.jsx → section bodies marked "PLACEHOLDER — replace with real content" (optional refinement)
+- src/components/sections/HowItWorks.jsx → 3-step summary (optional refinement)
 
-## Features (src/data/features.js)
-- All 4 feature titles/descriptions/icons are placeholders.
-
-## Installation (src/data/installationSteps.js)
-- All steps and troubleshooting entries are placeholders.
-
-## User Guide (src/data/userGuide.js)
-- All sections and tutorials are placeholders.
-
-## FAQ (src/data/faqData.js)
-- All questions/answers are placeholders.
-
-## Release notes (src/data/releaseNotes.js)
-- Placeholder entry only.
-
-## Other
-- Hero badge "Version X available" derives from siteConfig.version
-- System requirements list in DownloadsPage has placeholder RAM/disk values
-- useDocumentTitle suffix "Your Software" in src/hooks/useDocumentTitle.js
-- Header logo initial derives from productName
-- Footer copyright placeholder note
+## Resolved (no longer placeholders)
+- Product name, tagline, description
+- Feature list (8 real features)
+- Installation steps (unpacked Chromium extension)
+- User guide sections and tutorials
+- FAQ (real questions/answers)
+- Release notes (v1.0.0)
+- Supported platforms (Chrome, Edge, Brave desktop)

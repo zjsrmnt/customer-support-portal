@@ -8,7 +8,7 @@ export function FeaturesGrid() {
       <div className="max-w-2xl">
         <h2 className="heading-2">What you can do</h2>
         <p className="mt-2 text-ink-600">
-          PLACEHOLDER — replace with real feature highlights.
+          Everything CookieCrumbs does to keep your browsing private.
         </p>
       </div>
       <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
