@@ -11,7 +11,7 @@ export const siteConfig = {
   version: "1.0.0",
   releaseDate: "2026-05-01",
   // Downloadable extension package (served from /public/downloads/).
-  downloadUrl: "/downloads/cookiecrumbs.zip",
+  downloadUrl: `${import.meta.env.BASE_URL}downloads/cookiecrumbs.zip`,
   installerFileName: "cookiecrumbs.zip",
   installerSize: "~7.5 MB",
   platforms: [

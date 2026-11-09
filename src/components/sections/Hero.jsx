@@ -6,9 +6,9 @@ import logoUrl from "../../assets/cookiecrumbs-logo.svg";
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 to-white">
-      <div className="container-page py-16 sm:py-24">
+      <div className="container-page py-16 sm:py-24 lg:py-28 2xl:py-32">
         <div className="max-w-3xl">
-          <img src={logoUrl} alt="CookieCrumbs logo" className="h-16 w-16" />
+          <img src={logoUrl} alt="CookieCrumbs logo" className="h-16 w-16 lg:h-20 lg:w-20" />
           <span className="mt-4 inline-flex items-center rounded-full bg-brand-100 px-3 py-1 text-xs font-medium text-brand-700">
             Version {siteConfig.version} available
           </span>

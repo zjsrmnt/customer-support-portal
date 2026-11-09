@@ -13,7 +13,7 @@ export default function InstallationGuidePage() {
         </p>
       </div>
 
-      <div className="mt-8 space-y-4">
+      <div className="mt-8 space-y-4 lg:mt-10">
         {installationSteps.map((step, i) => (
           <Card key={step.title}>
             <div className="flex gap-4">
@@ -29,7 +29,7 @@ export default function InstallationGuidePage() {
         ))}
       </div>
 
-      <div className="mt-10">
+      <div className="mt-10 lg:mt-14">
         <h2 className="heading-2">Troubleshooting</h2>
         <div className="mt-4 space-y-3">
           {troubleshooting.map((t) => (

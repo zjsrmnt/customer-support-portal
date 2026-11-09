@@ -17,7 +17,7 @@ export default function DownloadsPage() {
         </p>
       </div>
 
-      <div className="mt-8 grid gap-6 lg:grid-cols-2">
+      <div className="mt-8 grid gap-6 lg:mt-10 lg:gap-8 lg:grid-cols-2">
         <Card>
           <div className="flex items-center justify-between">
             <h2 className="heading-3">{siteConfig.productName}</h2>
@@ -88,7 +88,7 @@ export default function DownloadsPage() {
         </Card>
       </div>
 
-      <div className="mt-10">
+      <div className="mt-10 lg:mt-14">
         <h2 className="heading-2">Release notes</h2>
         <div className="mt-4 space-y-4">
           {releaseNotes.map((r) => (

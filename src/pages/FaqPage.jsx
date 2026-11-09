@@ -28,7 +28,7 @@ export default function FaqPage() {
         <p className="mt-2 text-ink-600">Find quick answers to common questions.</p>
       </div>
 
-      <div className="mt-6 max-w-3xl">
+      <div className="mt-6 max-w-3xl lg:mt-8">
         <div className="relative">
           <Icon name="HelpCircle" className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-ink-400" />
           <input
@@ -42,7 +42,7 @@ export default function FaqPage() {
         </div>
       </div>
 
-      <div className="mt-8 space-y-8">
+      <div className="mt-8 space-y-8 lg:mt-10 lg:space-y-10">
         {filtered.length === 0 ? (
           <p className="text-ink-500">No questions match your search.</p>
         ) : (

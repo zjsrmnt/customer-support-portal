@@ -9,9 +9,9 @@ const steps = [
 export function HowItWorks() {
   return (
     <section className="bg-ink-100">
-      <div className="container-page py-12 sm:py-16">
+      <div className="container-page section">
         <h2 className="heading-2">Get up and running in minutes</h2>
-        <div className="mt-8 grid gap-6 sm:grid-cols-3">
+        <div className="mt-8 grid gap-6 sm:grid-cols-3 lg:gap-8">
           {steps.map((s, i) => (
             <div key={s.title} className="card">
               <div className="flex items-center gap-3">

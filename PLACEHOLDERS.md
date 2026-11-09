@@ -6,7 +6,6 @@ Product: CookieCrumbs (capstone browser extension). Content derived from
 ## Still placeholders
 - src/data/siteConfig.js → supportEmail: "support@example.com" (replace with team email)
 - src/pages/SupportPage.jsx → response-time expectations (adjust to real SLA)
-- src/pages/UserGuidePage.jsx → section bodies marked "PLACEHOLDER — replace with real content" (optional refinement)
 - src/components/sections/HowItWorks.jsx → 3-step summary (optional refinement)
 
 ## Resolved (no longer placeholders)
@@ -19,3 +18,4 @@ Product: CookieCrumbs (capstone browser extension). Content derived from
 - Supported platforms (Chrome, Edge, Brave desktop)
 - Downloadable extension package (cookiecrumbs.zip, ~7.5 MB)
 - Downloads page system requirements (placeholder note removed)
+- User guide steps with real CookieCrumbs screenshots

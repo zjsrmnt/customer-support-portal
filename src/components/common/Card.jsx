@@ -1,4 +1,8 @@
-export function Card({ children, className = "", as = "div" }) {
+export function Card({ children, className = "", as = "div", ...rest }) {
   const Tag = as;
-  return <Tag className={`card ${className}`}>{children}</Tag>;
+  return (
+    <Tag className={`card ${className}`} {...rest}>
+      {children}
+    </Tag>
+  );
 }

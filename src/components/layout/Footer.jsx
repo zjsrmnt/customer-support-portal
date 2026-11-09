@@ -5,8 +5,8 @@ import { siteConfig } from "../../data/siteConfig.js";
 export function Footer() {
   return (
     <footer className="border-t border-ink-200 bg-white">
-      <div className="container-page py-10">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="container-page py-10 lg:py-14">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
           <div>
             <p className="font-bold text-ink-900">{siteConfig.productName}</p>
             <p className="mt-2 text-sm text-ink-500 max-w-prose">

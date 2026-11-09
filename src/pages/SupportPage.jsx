@@ -14,7 +14,7 @@ export default function SupportPage() {
         </p>
       </div>
 
-      <div className="mt-8 grid gap-6 lg:grid-cols-2">
+      <div className="mt-8 grid gap-6 lg:mt-10 lg:grid-cols-2 lg:gap-8">
         <Card>
           <div className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-100 text-brand-700">
@@ -55,7 +55,7 @@ export default function SupportPage() {
         </Card>
       </div>
 
-      <div className="mt-8">
+      <div className="mt-8 lg:mt-10">
         <Card>
           <h2 className="heading-3">Helpful resources</h2>
           <ul className="mt-3 space-y-2 text-sm">

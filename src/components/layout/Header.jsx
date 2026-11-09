@@ -25,13 +25,13 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-ink-200 bg-white/90 backdrop-blur">
-      <Container className="flex h-16 items-center justify-between gap-4">
+      <Container className="flex h-16 items-center justify-between gap-4 lg:h-20">
         <Link to="/" className="flex items-center gap-2 font-bold text-ink-900">
-          <img src={logoUrl} alt="CookieCrumbs logo" className="h-8 w-8" />
+          <img src={logoUrl} alt="CookieCrumbs logo" className="h-8 w-8 lg:h-9 lg:w-9" />
           <span className="hidden sm:inline">{siteConfig.productName}</span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-6" aria-label="Primary">
+        <nav className="hidden md:flex items-center gap-6 lg:gap-8" aria-label="Primary">
           {navLinks.map((l) => (
             <NavLink key={l.to} to={l.to} className={linkClass} end={l.to === "/"}>
               {l.label}

@@ -4,8 +4,8 @@ import { Icon } from "../common/Icon.jsx";
 
 export function SupportStrip() {
   return (
-    <section className="container-page py-12 sm:py-16">
-      <div className="card flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
+    <section className="container-page section">
+      <div className="card flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between lg:gap-6">
         <div>
           <h2 className="heading-3">Need help?</h2>
           <p className="mt-1 text-sm text-ink-600">
