@@ -63,7 +63,7 @@ export function Header() {
       {open && (
         <div className="md:hidden fixed inset-0 z-50" role="dialog" aria-modal="true" aria-label="Menu">
           <div
-            className="absolute inset-0 bg-ink-900/40"
+            className="absolute inset-0 bg-ink-900"
             onClick={() => setOpen(false)}
             aria-hidden="true"
           />
