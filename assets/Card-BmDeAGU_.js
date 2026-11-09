@@ -1,0 +1,1 @@
+import{i as e}from"./index-CaiTVy5f.js";var t=e();function n({children:e,className:n=``,as:r=`div`,...i}){return(0,t.jsx)(r,{className:`card ${n}`,...i,children:e})}export{n as t};
