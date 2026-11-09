@@ -85,9 +85,6 @@ export default function DownloadsPage() {
               No external server required — runs fully in-browser
             </li>
           </ul>
-          <p className="mt-4 text-xs text-ink-500 italic">
-            PLACEHOLDER — confirm final requirements before submission.
-          </p>
         </Card>
       </div>
 
