@@ -48,37 +48,21 @@ export function Header() {
             <button
               type="button"
               className="md:hidden btn-secondary"
-              aria-label="Open menu"
+              aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
-              onClick={() => setOpen(true)}
+              onClick={() => setOpen((v) => !v)}
             >
-              <Icon name="Menu" className="h-5 w-5" />
+              <Icon name={open ? "X" : "Menu"} className="h-5 w-5" />
             </button>
           </div>
         </Container>
       </header>
 
-      {/* Mobile drawer — rendered outside <header> so the header's
-          backdrop-blur cannot become its containing block. */}
+      {/* Mobile menu — in normal flow, so it pushes the page down instead of
+          covering it with a dark overlay. Both the menu and the page stay visible. */}
       {open && (
-        <div className="md:hidden fixed inset-0 z-50" role="dialog" aria-modal="true" aria-label="Menu">
-          <div
-            className="absolute inset-0 bg-ink-900"
-            onClick={() => setOpen(false)}
-            aria-hidden="true"
-          />
-          <div className="absolute right-0 top-0 h-full w-72 max-w-[85vw] overflow-y-auto bg-white p-6 shadow-lift">
-            <div className="flex items-center justify-between mb-6">
-              <span className="font-bold text-ink-900">{siteConfig.productName}</span>
-              <button
-                type="button"
-                className="btn-ghost"
-                aria-label="Close menu"
-                onClick={() => setOpen(false)}
-              >
-                <Icon name="X" className="h-5 w-5" />
-              </button>
-            </div>
+        <div className="md:hidden border-b border-ink-200 bg-white shadow-card">
+          <Container className="py-4">
             <nav className="flex flex-col gap-1" aria-label="Mobile">
               {navLinks.map((l) => (
                 <NavLink
@@ -99,14 +83,14 @@ export function Header() {
               ))}
               <Link
                 to="/downloads"
-                className="btn-primary mt-4"
+                className="btn-primary mt-3"
                 onClick={() => setOpen(false)}
               >
                 <Icon name="Download" className="h-4 w-4" />
                 Download
               </Link>
             </nav>
-          </div>
+          </Container>
         </div>
       )}
     </>
