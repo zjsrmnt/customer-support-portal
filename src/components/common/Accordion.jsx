@@ -1,6 +1,49 @@
 import { useState } from "react";
 import { Icon } from "./Icon.jsx";
 
+function AnswerBody({ answer }) {
+  const blocks = Array.isArray(answer) ? answer : [answer];
+  return (
+    <div className="space-y-3 text-sm leading-relaxed text-ink-600 sm:text-[0.9375rem]">
+      {blocks.map((block, i) => {
+        if (typeof block === "string") return <p key={i}>{block}</p>;
+        if (block.note) {
+          return (
+            <div
+              key={i}
+              className="rounded-lg border border-brand-200 bg-brand-50 px-3 py-2 text-ink-700"
+            >
+              {block.note}
+            </div>
+          );
+        }
+        if (block.steps) {
+          return (
+            <ol
+              key={i}
+              className="list-decimal space-y-1.5 pl-5 marker:font-semibold marker:text-brand-700"
+            >
+              {block.steps.map((step, j) => (
+                <li key={j}>{step}</li>
+              ))}
+            </ol>
+          );
+        }
+        if (block.list) {
+          return (
+            <ul key={i} className="list-disc space-y-1.5 pl-5 marker:text-brand-600">
+              {block.list.map((item, j) => (
+                <li key={j}>{item}</li>
+              ))}
+            </ul>
+          );
+        }
+        return null;
+      })}
+    </div>
+  );
+}
+
 export function AccordionItem({ question, answer, defaultOpen = false }) {
   const [open, setOpen] = useState(defaultOpen);
   return (
@@ -18,7 +61,9 @@ export function AccordionItem({ question, answer, defaultOpen = false }) {
         />
       </button>
       {open && (
-        <div className="pb-4 text-ink-600 leading-relaxed">{answer}</div>
+        <div className="pb-4">
+          <AnswerBody answer={answer} />
+        </div>
       )}
     </div>
   );
