@@ -27,6 +27,7 @@ export default function App() {
           <Suspense fallback={<Loading />}>
             <Routes>
               <Route path="/" element={<HomePage />} />
+              <Route path="" element={<HomePage />} />
               <Route path="/downloads" element={<DownloadsPage />} />
               <Route path="/installation-guide" element={<InstallationGuidePage />} />
               <Route path="/user-guide" element={<UserGuidePage />} />
