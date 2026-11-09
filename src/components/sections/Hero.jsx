@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
 import { siteConfig } from "../../data/siteConfig.js";
 import { Icon } from "../common/Icon.jsx";
+import logoUrl from "../../assets/cookiecrumbs-logo.svg";
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-brand-50 to-white">
       <div className="container-page py-16 sm:py-24">
         <div className="max-w-3xl">
-          <span className="badge-brand inline-flex items-center rounded-full bg-brand-100 px-3 py-1 text-xs font-medium text-brand-700">
+          <img src={logoUrl} alt="CookieCrumbs logo" className="h-16 w-16" />
+          <span className="mt-4 inline-flex items-center rounded-full bg-brand-100 px-3 py-1 text-xs font-medium text-brand-700">
             Version {siteConfig.version} available
           </span>
           <h1 className="mt-4 text-4xl font-bold tracking-tight text-ink-900 sm:text-5xl">

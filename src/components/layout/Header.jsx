@@ -4,6 +4,7 @@ import { navLinks } from "../../data/navigation.js";
 import { siteConfig } from "../../data/siteConfig.js";
 import { Container } from "../common/Container.jsx";
 import { Icon } from "../common/Icon.jsx";
+import logoUrl from "../../assets/cookiecrumbs-logo.svg";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -17,9 +18,7 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-ink-200 bg-white/90 backdrop-blur">
       <Container className="flex h-16 items-center justify-between gap-4">
         <Link to="/" className="flex items-center gap-2 font-bold text-ink-900">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-white text-sm">
-            {siteConfig.productName.charAt(0)}
-          </span>
+          <img src={logoUrl} alt="CookieCrumbs logo" className="h-8 w-8" />
           <span className="hidden sm:inline">{siteConfig.productName}</span>
         </Link>
 
