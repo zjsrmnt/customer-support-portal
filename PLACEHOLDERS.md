@@ -5,8 +5,6 @@ Product: CookieCrumbs (capstone browser extension). Content derived from
 
 ## Still placeholders
 - src/data/siteConfig.js → supportEmail: "support@example.com" (replace with team email)
-- src/data/siteConfig.js → downloadUrl: null (set when a zipped extension build is available)
-- src/data/siteConfig.js → installerSize: "—" (set when package is built)
 - src/pages/DownloadsPage.jsx → system requirements note (confirm final requirements)
 - src/pages/SupportPage.jsx → response-time expectations (adjust to real SLA)
 - src/pages/UserGuidePage.jsx → section bodies marked "PLACEHOLDER — replace with real content" (optional refinement)
@@ -20,3 +18,4 @@ Product: CookieCrumbs (capstone browser extension). Content derived from
 - FAQ (real questions/answers)
 - Release notes (v1.0.0)
 - Supported platforms (Chrome, Edge, Brave desktop)
+- Downloadable extension package (cookiecrumbs.zip, ~7.5 MB)
