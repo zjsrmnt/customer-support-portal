@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { navLinks } from "../../data/navigation.js";
 import { siteConfig } from "../../data/siteConfig.js";
@@ -8,6 +8,15 @@ import logoUrl from "../../assets/cookiecrumbs-logo.svg";
 
 export function Header() {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
 
   const linkClass = ({ isActive }) =>
     `text-sm font-medium transition-colors ${

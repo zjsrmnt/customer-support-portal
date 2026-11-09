@@ -1,16 +1,42 @@
-# React + Vite
+# CookieCrumbs Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Customer support and software download portal for **CookieCrumbs** — a cybersecurity
+browser extension for cookie risk analysis, real-time threat alerts, risk-based
+cookie protection, and website privacy scoring (capstone project, May 2026).
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19 + Vite 8
+- Tailwind CSS 3.4
+- React Router 7
+- Lucide React icons
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev        # http://localhost:5173
+```
 
-## Expanding the Oxlint configuration
+## Scripts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```bash
+npm run dev        # start dev server
+npm run build      # production build → dist/
+npm run preview    # preview production build
+npm run lint       # run oxlint
+```
+
+## Project Structure
+
+See `docs`/phases in the project plan. Content lives in `src/data/*.js` so text,
+versions, FAQs, and steps can be updated without touching components.
+
+## Placeholders
+
+See `PLACEHOLDERS.md` for the list of content still to be replaced before
+final submission.
+
+## Deployment
+
+See `DEPLOYMENT.md`.
