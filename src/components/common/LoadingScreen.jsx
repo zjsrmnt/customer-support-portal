@@ -1,6 +1,19 @@
 import { useEffect, useState } from "react";
 
-const BITE_DELAYS = [0.25, 0.55, 0.85, 1.15, 1.45];
+// Big, hungry bites that gobble around the edge, then chomp into the core.
+const BITES = [
+  // perimeter — one huge mouthful per side
+  { cx: 95, cy: 25, r: 27, delay: 0.12 },
+  { cx: 110, cy: 60, r: 27, delay: 0.3 },
+  { cx: 95, cy: 95, r: 27, delay: 0.48 },
+  { cx: 60, cy: 110, r: 27, delay: 0.66 },
+  { cx: 25, cy: 95, r: 27, delay: 0.84 },
+  { cx: 10, cy: 60, r: 27, delay: 1.02 },
+  // deep chomps that reach near the center
+  { cx: 84, cy: 60, r: 21, delay: 1.22 },
+  { cx: 38, cy: 34, r: 21, delay: 1.38 },
+  { cx: 82, cy: 82, r: 21, delay: 1.54 },
+];
 
 export function LoadingScreen({ duration = 2400 }) {
   const [hidden, setHidden] = useState(false);
@@ -51,14 +64,14 @@ export function LoadingScreen({ duration = 2400 }) {
             </radialGradient>
             <mask id="cc-cookie-bites">
               <rect width="120" height="120" fill="white" />
-              {BITE_DELAYS.map((delay, i) => (
+              {BITES.map((bite, i) => (
                 <circle
                   key={i}
                   className="cc-bite"
-                  style={{ animationDelay: `${delay}s` }}
-                  cx={[104, 117, 101, 63, 24][i]}
-                  cy={[26, 63, 100, 117, 108][i]}
-                  r={i === 4 ? 14 : 15}
+                  style={{ animationDelay: `${bite.delay}s` }}
+                  cx={bite.cx}
+                  cy={bite.cy}
+                  r={bite.r}
                   fill="black"
                 />
               ))}
@@ -91,6 +104,9 @@ export function LoadingScreen({ duration = 2400 }) {
         <span className="cc-crumb cc-crumb-3" />
         <span className="cc-crumb cc-crumb-4" />
         <span className="cc-crumb cc-crumb-5" />
+        <span className="cc-crumb cc-crumb-6" />
+        <span className="cc-crumb cc-crumb-7" />
+        <span className="cc-crumb cc-crumb-8" />
       </div>
 
       <p className="cc-loader__title">CookieCrumbs</p>
